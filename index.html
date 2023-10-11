@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap task</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--///////////////////////////////////////////////////////////////// nav start /////////////////////////////////////////////////////// -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+      <a class="navbar-brand p-1" href="#"><img src="img/logo.svg" style="width: 40px;" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link fw-bold text-light" href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light" href="#">Woman</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light" href="#">Kids</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sections
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item " href="#">Clothing</a></li>
+              <li><a class="dropdown-item" href="#">shoes</a></li>
+              <li><a class="dropdown-item" href="#">Acceessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">More...</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex  ">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success  text-light " type="submit">Search</button>
+          <button type="button" class="btn btn-success  text-light mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Login
+          </button>   
+          
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary text-light">
+                  <h5 class="modal-title " id="exampleModalLabel">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- //////////////////////////////////////////////////////////////// nav End /////////////////////////////////////////////////////////// -->
+  <!-- start carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active container-fluid">
+        <img src="img/coruser 4.jpg" class="d-block w-100"  alt="...">
+        
+      </div>
+      <div class="carousel-item container-fluid">
+        <img src="img/carousel 2.jpg" class="d-block w-100"  alt="...">
+        
+      </div>
+      <div class="carousel-item container-fluid">
+        <img src="img/carousel 3.jpg" class="d-block w-100"  alt="...">
+        
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- End carousel -->
+  <!-- start welcome section -->
+  <div class="welcome p-3  bg-primary text-light container rounded-2 text-center ">
+    <h2>welcome</h2>
+    <p>We hope you find what you're looking for and that you enjoy your stay</p>
+    <button class="btn btn-success" >Learn More</button>
+  </div>
+  <!-- End welcome section -->
+  <!-- start Accordion -->
+  <div class="accordion accordion-flush container-fluid p-2 " id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Who is better Messi or Ronaldo?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Who is better Messi Or Ronaldo? Ronaldo has scored a record number
+           of international goals and appearances, but Messi has won more Ballon d'Or awards (7).
+            Messi has spent most of his playing career in Spain and France,
+           while Ronaldo has played in Portugal, England, Spain, and Italy</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Is Camp Nou the best stadium in the world?
+
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Camp Nou is rightly regarded as one of the most 
+          famous sporting venues in the world. Home to the staggeringly successful FC Barcelona,
+           this sporting arena can hold nearly 100,000 passionate Barcelona fans.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          What is the best team in football history?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Al-ahly team is the best </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Accordion -->
+  <!-- start copy sec -->
+  <div class="copy-sec container-fluid p-2">
+    <div class="bg-primary p-3 rounded">
+      <h1 class="text-center text-light">The best player</h1>
+    </div>
+    
+    <h4 class="text-dark">write the best player is :</h4>
+    <button class="btn btn-primary my-2 " id="copy" onclick="copytext()">Copy</button>
+    <input type="text" class="form-control " style="height: 100px;" placeholder="Write the best ">
+
+  </div>
+  <div class="copy-sec container-fluid p-2">
+    <div class="bg-primary p-3 rounded">
+      <h1 class="text-center text-light">The best stadium</h1>
+    </div>
+    
+    <h4 class="text-dark">write the best stadium is :</h4>
+    <button class="btn btn-primary my-2 " id="copy" onclick="copytext()">Copy</button>
+    <input type="text" class="form-control p-2" style="height: 100px;"  placeholder="Write the best ">
+
+  </div> <hr>
+  <!-- End copy sec -->
+  <!-- start img sec -->
+  <div class="img-sec"></div>
+  <!-- End img sec -->
+  <div class="bg-primary p-3 rounded text-light">
+    <h1 class="text-center">The best Teams</h1>
+  </div>
+  <!-- start card -->
+  <div class="card-sec p-4">
+    <div class="container">
+      <div class="row justify-content-between flex-wrap">
+
+        <div class="card cards col-lg-3 col-md-5 col-12 g-2" style="height: 400px;" >
+          <img src="img/fc-barcelona.svg" class="card-img-top h-50 p-1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text text-dark">fc-barcelona</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+
+        <div class="card cards col-lg-3 col-md-5 col-12 g-2" style="height: 400px;" >
+          <img src="img/inter-milan-2021.svg" class="card-img-top h-50 p-1 " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-dark">inter-milan</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+
+        <div class="card cards col-lg-3 col-md-5 col-12 g-2" style="height: 400px;" >
+          <img src="img/liverpool-fc-4.svg" class="card-img-top h-50 p-1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-dark">liverpool</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+
+        
+        
+      </div>
+
+      <div class="row justify-content-between flex-wrap">
+
+        <div class="card cards col-lg-3 col-md-5 col-12 g-2" style="height: 400px;" >
+          <img src="img/manchester-united.svg" class="card-img-top h-50 p-1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-dark">manchester-united</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+
+        <div class="card cards col-lg-3 col-md-5 col-12 g-2" style="height: 400px;" >
+          <img src="img/real-madrid-c-f.svg" class="card-img-top h-50 p-1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-dark">real-madrid</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+
+        <div class="card cards col-lg-3 col-md-5 col-12 g-2" style="height: 400px;" >
+          <img src="img/card 6.svg" class="card-img-top h-50 p-1" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-dark">chelsea-fc</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+  <!-- End card -->
+  <!-- start img sec -->
+  <div class="img-sec"></div>
+  <!-- End img sec -->
+  <div class="bg-primary p-3 rounded text-light">
+    <h1 class="text-center">Thanks For</h1>
+  </div>
+
+  <!-- start team sec -->
+  <div class="team-sec p-3">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="card team1 col-lg-3 col-md-5 col-12 g-2 ">
+          <div class="team-info text-light">
+            <img src="img/team 1 small .jpg" class="rounded-circle img-thumbnail" style="width: 70px;" alt="">
+            <p class="p-3 fw-bold">C.Ronaldo</p>
+          </div>
+        </div>
+
+        <div class="card team2 col-lg-3 col-md-5 col-12 g-2 ">
+          <div class="team-info text-light">
+            <img src="img/team 2 small .jpg" class="rounded-circle img-thumbnail" style="width: 70px;" alt="">
+            <p class="p-3 fw-bold">Messi</p>
+          </div>
+        </div>
+
+        <div class="card team3 col-lg-3 col-md-5 col-12 g-2 ">
+          <div class="team-info text-light">
+            <img src="img/team 3 small .jpg" class="rounded-circle img-thumbnail" style="width: 70px;" alt="">
+            <p class="p-3 fw-bold">M.salah</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End team sec -->
+  <!-- start podcast sec -->
+  
+  
+  <section class="light">
+    <div class="container py-2">
+      <div class="h1 text-center text-dark" id="pageHeaderTitle">Best National and Team</div>
+  
+      <article class="postcard light blue">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="img/card 1.jpg" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title blue"><a href="#">Barcelona</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play blue">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="postcard light red">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="img/card 2.jpg" alt="Image Title" />	
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title red"><a href="#">Brazil</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play red">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard light green">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="img/card 1.jpg" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title green"><a href="#">Barcelona</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play green">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard light yellow">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="img/card 2.jpg" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title yellow"><a href="#">Brazil</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play yellow">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- End podcast sec -->
+  <!-- start join us -->
+  <div class="join-us p-3">
+
+  
+  <div class="container flex-wrap ">
+  
+      <div class="join-item text-center col-lg-2 col-md-4 col-sm-6">
+        <h2>subscribe now</h2>
+        <i class="fab fa-facebook-square"></i>
+        <p>join us</p>
+      </div>
+      <div class="join-item text-center col-lg-2 col-md-4 col-sm-6">
+        <h2>subscribe now</h2>
+        <i class="fab fa-twitter-square"></i>
+        <p>join us</p>
+      </div>
+      <div class="join-item text-center col-lg-2 col-md-4 col-sm-6">
+        <h2>subscribe now</h2>
+        <i class="fab fa-instagram-square"></i>
+        <p>join us</p>
+      </div>
+      <div class="join-item text-center col-lg-2 col-md-4 col-sm-6">
+        <h2>subscribe now</h2>
+        <i class="fab fa-linkedin"></i>
+        <p>join us</p>
+      </div>
+    </div>
+      
+    
+  </div>
+  <!-- End join us -->
+  <!-- start footer -->
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+   
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="img/logo.svg" style="width: 50px;" alt="">&nbsp;Adidas
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Adidas.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  <!-- End footer -->
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/cdn.jsdelivr.net_npm_jquery@3.5.1_dist_jquery.slim.min.js.js"></script>
+    <script src="js/cdn.jsdelivr.net_npm_popper.js@1.16.1_dist_umd_popper.min.js.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
